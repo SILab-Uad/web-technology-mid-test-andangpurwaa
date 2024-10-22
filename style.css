@@ -10,7 +10,7 @@ body {
 .container {
     text-align: center;
     padding: 30px;
-    background-color: #ffffff; /* White background for container */
+    background-color: #ffffff; /* Background putih untuk container */
     border-radius: 15px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
     width: 90%;
@@ -25,7 +25,7 @@ body {
 h1 {
     font-size: 2.2em;
     margin-bottom: 20px;
-    color: #4a4a4a; /* Dark grey for the header */
+    color: #4a4a4a; /* Warna abu-abu gelap untuk judul */
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -33,7 +33,7 @@ h1 {
 
 label {
     font-size: 1em;
-    color: #555; /* Medium grey for labels */
+    color: #555; /* Warna abu-abu medium untuk label */
     margin: 10px 0;
     display: block;
     text-align: left;
@@ -47,20 +47,20 @@ input[type="number"] {
     width: 100%;
     padding: 8px;
     border-radius: 5px;
-    border: 1px solid #ddd; /* Light grey border for inputs */
+    border: 1px solid #ddd; /* Border abu-abu muda untuk input */
     margin-bottom: 15px;
     font-size: 1em;
     transition: border-color 0.3s ease;
 }
 
 input[type="number"]:focus {
-    border-color: #2ebf91; /* Change border color on focus */
-    outline: none; /* Remove default outline */
+    border-color: #2ebf91; /* Ubah warna border saat fokus */
+    outline: none; /* Hapus outline default */
 }
 
 button {
-    background-color: #2ebf91; /* Green background for buttons */
-    color: white; /* White text color */
+    background-color: #2ebf91; /* Background hijau untuk tombol */
+    color: white; /* Warna teks putih */
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -71,29 +71,29 @@ button {
 }
 
 button:hover {
-    background-color: #24a07b; /* Darker green on hover */
-    transform: scale(1.05); /* Scale up on hover */
+    background-color: #24a07b; /* Hijau lebih gelap saat hover */
+    transform: scale(1.05); /* Perbesar saat hover */
 }
 
 #passwordOutput {
     font-size: 1.4em;
     margin: 20px 0;
     padding: 15px;
-    background-color: #f0f4ff; /* Light blue background for output */
-    border: 1px solid #ddd; /* Light grey border */
+    background-color: #f0f4ff; /* Background biru muda untuk output */
+    border: 1px solid #ddd; /* Border abu-abu muda */
     border-radius: 5px;
-    word-break: break-word; /* Ensure long passwords break properly */
-    color: #333; /* Dark text color for visibility */
+    word-break: break-word; /* Agar password panjang terpecah */
+    color: #333; /* Warna teks gelap untuk visibilitas */
     transition: background-color 0.3s ease;
 }
 
 #passwordOutput:hover {
-    background-color: #e3eaff; /* Slightly darker blue on hover */
+    background-color: #e3eaff; /* Biru sedikit lebih gelap saat hover */
 }
 
 #copyBtn {
-    background-color: #8360c3; /* Purple background for copy button */
-    color: white; /* White text color */
+    background-color: #8360c3; /* Background ungu untuk tombol copy */
+    color: white; /* Warna teks putih */
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
@@ -101,6 +101,6 @@ button:hover {
 }
 
 #copyBtn:hover {
-    background-color: #6a4fb1; /* Darker purple on hover */
-    transform: scale(1.05); /* Scale up on hover */
+    background-color: #6a4fb1; /* Ungu lebih gelap saat hover */
+    transform: scale(1.05); /* Perbesar saat hover */
 }

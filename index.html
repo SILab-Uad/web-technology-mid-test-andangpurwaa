@@ -6,34 +6,34 @@
     <title>Password Generator</title>
 </head>
 <body>
-    <div style="max-width: 400px; margin: auto; padding: 20px; text-align: center; border: 1px solid #ccc; border-radius: 10px; background-color: #f9f9f9;">
+    <div class="container" style="max-width: 400px; margin: auto; padding: 20px; text-align: center; border: 1px solid #ccc; border-radius: 10px; background-color: #f9f9f9;">
         <h1 style="font-size: 24px; margin-bottom: 20px;">Generate Your Password</h1>
 
-        <!-- TODO: Create an input field for password length -->
-        <label for="length" style="display: block; margin-bottom: 10px;">Password Length:</label>
+        <!-- Input untuk panjang password -->
+        <label for="length" style="display: block; margin-bottom: 10px;">Panjang Password:</label>
         <input type="number" id="length" value="12" min="8" max="128" style="width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #ccc;">
 
-        <h3 style="margin-bottom: 10px;">Select Criteria:</h3>
+        <h3 style="margin-bottom: 10px;">Pilih Kriteria:</h3>
         
-        <!-- TODO: Add checkboxes for password generation options -->
+        <!-- Checkbox untuk opsi password -->
         <div style="text-align: left; margin-bottom: 20px;">
-            <label><input type="checkbox" id="includeUppercase"> Include Uppercase Letters</label><br>
-            <label><input type="checkbox" id="includeLowercase" checked> Include Lowercase Letters</label><br>
-            <label><input type="checkbox" id="includeNumbers" checked> Include Numbers</label><br>
-            <label><input type="checkbox" id="includeSpecialChars"> Include Special Characters</label>
+            <label><input type="checkbox" id="includeUppercase"> Gunakan Huruf Kapital</label><br>
+            <label><input type="checkbox" id="includeLowercase" checked> Gunakan Huruf Kecil</label><br>
+            <label><input type="checkbox" id="includeNumbers" checked> Gunakan Angka</label><br>
+            <label><input type="checkbox" id="includeSpecialChars"> Gunakan Karakter Khusus</label>
         </div>
 
-        <!-- TODO: Add a button to generate the password -->
+        <!-- Tombol untuk generate password -->
         <button id="generateBtn" style="width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">Generate Password</button>
 
-        <!-- TODO: Add an area to display the generated password -->
+        <!-- Area untuk menampilkan password yang dihasilkan -->
         <p id="passwordOutput" style="font-size: 18px; margin: 20px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #fff;"></p>
 
-        <!-- TODO: Add a button to copy the password to clipboard -->
-        <button id="copyBtn" style="width: 100%; padding: 10px; background-color: #2196F3; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">Copy to Clipboard</button>
+        <!-- Tombol untuk menyalin password ke clipboard -->
+        <button id="copyBtn" style="width: 100%; padding: 10px; background-color: #2196F3; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">Copy ke Clipboard</button>
     </div>
 
     <script src="script.js"></script>
-    <script src="dom.js"></script>>
+    <script src="dom.js"></script>
 </body>
 </html>
