@@ -1,27 +1,106 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #e0e7ff; /* Background color */
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,24,121,1) 35%, rgba(0,189,255,1) 100%);
 }
 
 .container {
     text-align: center;
     padding: 30px;
-    background-color: #ffffff; /* Background color for container */
+    background-color: #ffffff; /* White background for container */
     border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
     width: 90%;
     max-width: 400px;
+    transition: transform 0.3s ease;
 }
 
-/* TODO: Add styles for labels, inputs, buttons, and output text */
+.container:hover {
+    transform: scale(1.05);
+}
+
 h1 {
     font-size: 2.2em;
     margin-bottom: 20px;
-    color: #4a4a4a; /* Header color */
+    color: #4a4a4a; /* Dark grey for the header */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-/* Add more styles here as needed */
+label {
+    font-size: 1em;
+    color: #555; /* Medium grey for labels */
+    margin: 10px 0;
+    display: block;
+    text-align: left;
+}
+
+input[type="number"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd; /* Light grey border for inputs */
+    margin-bottom: 15px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #2ebf91; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background-color: #2ebf91; /* Green background for buttons */
+    color: white; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #24a07b; /* Darker green on hover */
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+#passwordOutput {
+    font-size: 1.4em;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f0f4ff; /* Light blue background for output */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 5px;
+    word-break: break-word; /* Ensure long passwords break properly */
+    color: #333; /* Dark text color for visibility */
+    transition: background-color 0.3s ease;
+}
+
+#passwordOutput:hover {
+    background-color: #e3eaff; /* Slightly darker blue on hover */
+}
+
+#copyBtn {
+    background-color: #8360c3; /* Purple background for copy button */
+    color: white; /* White text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#copyBtn:hover {
+    background-color: #6a4fb1; /* Darker purple on hover */
+    transform: scale(1.05); /* Scale up on hover */
+}
